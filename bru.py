@@ -63,7 +63,6 @@ if __name__ == "__main__":
     billyrocketData = requests.get ("https://billyrocket.dgren.dev/api")
     checkApiSuccess (billyrocketData)
     billyrocketJson = billyrocketData.json ()
-    #  billyrocketJson = brCache.json ()
 
     if args ['distance']:
         printValueUnit (billyrocketDistance (billyrocketJson), outFormat=args ['format'])
